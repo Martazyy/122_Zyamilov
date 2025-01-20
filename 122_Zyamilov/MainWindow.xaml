@@ -6,25 +6,26 @@
         xmlns:local="clr-namespace:_122_Zyamilov"
         mc:Ignorable="d"
         Title="Практическая работа 1" Height="450" Width="800">
-    <Grid Background="LightGray">
+    <Grid Background="LightBlue">
         <Image x:Name="FunctionName" HorizontalAlignment="Center" VerticalAlignment="Top" Source="C:\Users\227054\source\repos\122_Zyamilov\122_Zyamilov\122_Zyamilov\function.png" Height="140" Width="360" Margin="0,32,0,0" ToolTip="Функция"/>
 
-        <Label Content="X: " HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,190,140,0"/>
-        <TextBox Name="InputX" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,195,-10,0" ToolTip="Введите X" Width="100"/>
-        <Label Content="Y: " HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,215,140,0"/>
-        <TextBox Name="InputY" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,220,-10,0" ToolTip="Введите Y" Width="100"/>
+        <Label Content="X: " HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,190,140,0" FontSize="16"/>
+        <TextBox Name="InputX" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,195,-10,0" ToolTip="Введите X" Width="100" FontSize="16"/>
+        <Label Content="Y: " HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,225,140,0" FontSize="16"/>
+        <TextBox Name="InputY" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,230,-10,0" ToolTip="Введите Y" Width="100" FontSize="16"/>
 
-        <Label Content="Выберите функцию:" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,240,0,0"/>
-        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,260,0,0" >
-            <RadioButton x:Name="RadioSh" Content="sh(x)" ToolTip="Гиперболический синус" IsChecked="true"/>
-            <RadioButton x:Name="RadioSquare" Content="x^2" ToolTip="Квадрат числа"/>
-            <RadioButton x:Name="RadioExp" Content="e^x" ToolTip="Экспонента"/>
+        <Label Content="Выберите функцию:" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,250,0,0" FontSize="16"/>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,280,0,0" >
+            <RadioButton x:Name="RadioSh" Content="sh(x)" ToolTip="Гиперболический синус" IsChecked="true" FontSize="16"/>
+            <RadioButton x:Name="RadioSquare" Content="x^2" ToolTip="Квадрат числа" FontSize="16"/>
+            <RadioButton x:Name="RadioExp" Content="e^x" ToolTip="Экспонента" FontSize="16"/>
         </StackPanel>
 
-        <Button Name="CalculateButton" Content="Вычислить" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,310,80,0" ToolTip="Вычисляет функцию по выбранным параметрам" Click="CalculateButton_Click"/>
-        <Button Name="ClearButton" Content="Очистить" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,310,-80,0" ToolTip="Очищает установленные параметры" Click="ClearButton_Click"/>
+        <Button Name="CalculateButton" Content="Вычислить" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,350,90,0" ToolTip="Вычисляет функцию по выбранным параметрам" Click="CalculateButton_Click" FontSize="16" Background="AliceBlue"/>
+        <Button Name="ClearButton" Content="Очистить" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,350,-90,0" ToolTip="Очищает установленные параметры" Click="ClearButton_Click" FontSize="16" Background="AliceBlue"/>
 
-        <Label Content="Результат: " HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,350,140,0"/>
-        <TextBox Name="ResultBox" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,355,-50,0" ToolTip="Результат вычисений" Width="120"/>
+        <Label Content="Результат: " HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,380,140,0" FontSize="16"/>
+        <TextBox Name="ResultBox" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,385,-70,0" ToolTip="Результат вычисений" Width="120" IsReadOnly="True"
+                 FontSize="16"/>
     </Grid>
 </Window>
