@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_122_Zyamilov"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Практическая работа 1" Height="450" Width="800">
+    <Grid Background="LightGray">
+        <Image x:Name="FunctionName" HorizontalAlignment="Center" VerticalAlignment="Top" Source="C:\Users\227054\source\repos\122_Zyamilov\122_Zyamilov\122_Zyamilov\function.png" Height="140" Width="360" Margin="0,32,0,0" ToolTip="Функция"/>
+
+        <Label Content="X: " HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,190,140,0"/>
+        <TextBox Name="InputX" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,195,-10,0" ToolTip="Введите X" Width="100"/>
+        <Label Content="Y: " HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,215,140,0"/>
+        <TextBox Name="InputY" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,220,-10,0" ToolTip="Введите X" Width="100"/>
+
+        <Label Content="Выберите функцию:" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,240,0,0"/>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,260,0,0" >
+            <RadioButton x:Name="RadioSh" Content="sh(x)" ToolTip="Гиперболический синус" IsChecked="true"/>
+            <RadioButton x:Name="RadioSquare" Content="x^2" ToolTip="Квадрат числа"/>
+            <RadioButton x:Name="RadioExp" Content="e^x" ToolTip="Экспонента"/>
+        </StackPanel>
+
+        <Button Name="CalculateButton" Content="Вычислить" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,310,80,0" ToolTip="Вычисляет функцию по выбранным параметрам" Click="CalculateButton_Click"/>
+        <Button Name="ClearButton" Content="Очистить" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,310,-80,0" ToolTip="Очищает установленные параметры" Click="ClearButton_Click"/>
+
+        <Label Content="Результат: " HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,350,140,0"/>
+        <TextBox Name="ResultBox" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,355,-50,0" ToolTip="Результат вычисений" Width="120"/>
     </Grid>
 </Window>
